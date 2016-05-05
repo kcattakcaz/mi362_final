@@ -24,7 +24,7 @@ app.get('/register',function(request, response){
       if (err)
       { console.error(err); response.json(false); }
       else
-      {   response.json(true); }
+      {   response.json({status:true,response:result}); }
     });
   });
 
